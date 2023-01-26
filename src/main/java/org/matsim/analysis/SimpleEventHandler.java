@@ -12,7 +12,7 @@ public class SimpleEventHandler implements PersonDepartureEventHandler, PersonAr
     public void handleEvent(PersonArrivalEvent personArrivalEvent) {
         System.out.println(personArrivalEvent.getTime()+":"+personArrivalEvent.getPersonId());
     }
-
+//
     @Override
     public void handleEvent(PersonDepartureEvent personDepartureEvent) {
         System.out.println("Departure: "+personDepartureEvent.getTime() + ": " + personDepartureEvent.getPersonId());
